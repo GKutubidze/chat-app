@@ -1,0 +1,97 @@
+.account {
+  background-color: var(--cultured);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  all: unset;
+  border: 1px solid var(--chinese-white);
+  height: 40px;
+  padding-left: 10px;
+}
+.inputContainer label {
+  color: var(--charleston-green);
+  font-size: 14px;
+}
+
+.signIn {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.button {
+  all: unset;
+  text-align: center;
+  color: white;
+  min-height: 40px;
+  background-color: var(--charleston-green);
+  cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--dim-gray);
+  width: 100%;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--dim-gray);
+  margin: 0 10px;
+}
+
+.buttonRegister {
+  all: unset;
+  text-align: center;
+  color: white;
+  min-height: 40px;
+  background-color: var(--cultured);
+  color: var(--charleston-green);
+  border: 1px solid var(--dim-gray);
+  border: 1px solid var(--chinese-white);
+  cursor: pointer;
+}
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section {
+    width: 35%;
+    gap: 40px;
+  }
+  .inputContainer {
+    gap: 10px;
+  }
+  .signIn {
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
+}
